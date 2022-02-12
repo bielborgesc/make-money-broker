@@ -14,7 +14,7 @@ nav{
 }
 .my-bg {
     background-color: #080708;
-    padding: 3vh 0;
+    padding: 2vh 0;
 }
 
 .my-nav-link {
@@ -116,4 +116,44 @@ nav{
     margin: 0;
     flex-direction: column;
     z-index: 100;
+}
+
+.main-banner{
+    border: 2px solid;
+    box-shadow: 0px 5px 20px rgba(253, 203, 64, 0.534);
+}
+
+/* Cards */
+.block-cards{
+    margin: 150px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.card img{
+    height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: #080708;
+    color: #E6E8E6;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, rgba(253,202,64,0.5606617647058824) 50%, rgba(8,7,8,1) 100%, rgba(253,202,64,0.5606617647058824) 50%) 1;
+    box-shadow: 5px 0px 10px rgba(253, 203, 64, 0.274);
+}
+
+div.card-body{
+    display: flex;
+}
+
+.card p {
+    align-items: center;
+    display: flex;
 }
