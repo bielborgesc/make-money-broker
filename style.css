@@ -62,3 +62,58 @@ nav{
 .my-navbar-toggler{
     background-color: #fdcb407e;
 }
+
+/* carousel */
+.background-image{
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-banner{
+    top: 0px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.99));
+    background-size: 300% 300%;
+    animation: colors 5s ease-in-out both;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+/* .text-banner{
+    top: 0px;
+    background: linear-gradient(90deg, #084177, #687466, #cd8d7b, #fbc499);
+    background-size: 300% 300%;
+    animation: colors 15s ease-in-out infinite;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+} */
+
+@keyframes colors {
+    0%{
+        background-position: 0% 100%;
+    }
+
+    50%{
+        background-position: 100% 100%;
+    }
+
+    100%{
+        background-position: 100% 100%;
+    }
+}
+
+.center-text{
+    color: white;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    z-index: 100;
+}
