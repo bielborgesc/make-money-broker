@@ -9,7 +9,7 @@ html, body{
 
 /* Menu Nav */
 nav{
-    border-bottom: 5px solid;
+    border-bottom: 2px solid;
     border-image: linear-gradient(90deg, rgba(253,202,64,0.5606617647058824) 50%, rgba(8,7,8,1) 100%) 1;
 }
 .my-bg {
@@ -125,6 +125,7 @@ nav{
 
 /* Cards */
 .block-cards{
+    display: flex;
     margin: 150px 0;
     width: 100%;
     display: flex;
@@ -144,7 +145,7 @@ nav{
     align-items: center;
     background-color: #080708;
     color: #E6E8E6;
-    border: 2px solid;
+    border: 1px solid;
     border-image: linear-gradient(90deg, rgba(253,202,64,0.5606617647058824) 50%, rgba(8,7,8,1) 100%, rgba(253,202,64,0.5606617647058824) 50%) 1;
     box-shadow: 5px 0px 10px rgba(253, 203, 64, 0.274);
 }
@@ -157,3 +158,95 @@ div.card-body{
     align-items: center;
     display: flex;
 }
+@media only screen and (max-width: 1000px){
+    .block-cards{
+        flex-direction: column;
+        margin: 100px 0;
+    }
+    .card{
+        margin: 20px 0;
+    }
+}
+/* Footer */
+footer{
+    border-top: 2px solid;
+    border-image: linear-gradient(270deg, rgba(253,202,64,0.5606617647058824) 50%, rgba(8,7,8,1) 100%, rgba(253,202,64,0.5606617647058824) 50%,  rgba(8,7,8,1) 100%) 1;
+    color: #E6E8E6;
+}
+
+
+/* Cumon Banner */
+.background-image-cummon{
+    height: 20vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text-banner-cummon{
+    top: 0px;
+    background: #080708c4;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 20vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-banner-cummon h2 {
+    font-size: 50px;
+}
+
+ /* Form */
+ .information{
+    margin: 7vw 0;
+    height: 80vh;
+ }
+ .information h3{
+    font-size: 28px;
+    color: #E6E8E6;
+    text-align: center;
+ }
+
+.block{
+    border: 1px solid;
+    border-image: linear-gradient(180deg, rgba(253,202,64,0.5606617647058824) 50%, rgba(8,7,8,1) 100%, rgba(253,202,64,0.5606617647058824) 50%) 1;
+    padding: 50px;
+}
+
+ label{
+    color: #E6E8E6;
+ }
+
+ .my-input-form{
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #080708;
+    background-color: #e6e8e6;
+    border-radius: 0.25rem;
+ }
+
+.my-form-check-input:checked {
+    background-color: #FDCA40;
+    border-color: #FDCA40;
+    box-shadow: 0 0 1em gold;
+}
+
+.my-form{
+    margin-bottom: 20px;
+}
+
+.my-form-select option:hover,
+.my-form-select option:focus,
+.my-form-select option:active,
+.my-form-select option:checked {
+    background-color: #FDCA40;
+}
+
