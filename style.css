@@ -1,10 +1,20 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 html, body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: #080708;
+}
+
+h1,h2,h3{
+    font-family: 'Bangers', cursive;
+}
+
+p{
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Menu Nav */
@@ -49,7 +59,6 @@ nav{
 }
 
 .my-header-letter{
-    font-family: 'Bangers', cursive;
     font-weight: 300;
     border-bottom: 1px dashed #FDCA40;
     background-image: linear-gradient(to left, #080708, #FDCA40);
@@ -72,25 +81,24 @@ nav{
 
 .text-banner{
     top: 0px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.99));
-    background-size: 300% 300%;
-    animation: colors 5s ease-in-out both;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1),rgb(0, 0, 0));
+    background-size: 800% 800%;
+    animation: colors 3s ease-in-out both;
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100vh;
 }
 
-/* .text-banner{
-    top: 0px;
-    background: linear-gradient(90deg, #084177, #687466, #cd8d7b, #fbc499);
-    background-size: 300% 300%;
-    animation: colors 15s ease-in-out infinite;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100vh;
-} */
+.center-text p {
+    padding: 0 20vw;
+    font-size: 30pt;
+}
+
+.center-text h2 {
+    padding: 0 20vw;
+    font-size: 36pt;
+}
 
 @keyframes colors {
     0%{
@@ -109,13 +117,14 @@ nav{
 .center-text{
     color: white;
     display:flex;
-    text-align: center;
+    text-align: end;
     justify-content: center;
     align-items: center;
     height: 100%;
     margin: 0;
     flex-direction: column;
     z-index: 100;
+    padding-right: 2px;
 }
 
 .main-banner{
@@ -140,6 +149,7 @@ nav{
 }
 
 .card {
+    margin: 0 10px;
     height: 600px;
     display: flex;
     align-items: center;
@@ -154,10 +164,20 @@ div.card-body{
     display: flex;
 }
 
-.card p {
+.card h3 {
     align-items: center;
     display: flex;
+    font-size: 24pt;
 }
+
+.card a{
+    width: 100%
+}
+
+.card{
+    width: 25rem;
+}
+
 @media only screen and (max-width: 1000px){
     .block-cards{
         flex-direction: column;
@@ -165,6 +185,21 @@ div.card-body{
     }
     .card{
         margin: 20px 0;
+        width: 20rem;
+    }
+
+    .center-text p {
+        font-size: 15pt;
+        padding: 10px;
+    }
+
+    .center-text h3 {
+        font-size: 18pt;
+        padding: 10px;
+    }
+
+    #carouselExampleFade button{
+        opacity: 0;
     }
 }
 /* Footer */
@@ -184,7 +219,7 @@ footer{
 
 .text-banner-cummon{
     top: 0px;
-    background: #080708c4;
+    background: #080708f8;
     position: absolute;
     z-index: 1;
     width: 100%;
