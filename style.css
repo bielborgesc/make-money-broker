@@ -341,3 +341,27 @@ footer{
     margin:auto;
     overflow-y:auto;
 }
+
+/* Products */
+.container-tittle{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    color: #E6E8E6;
+}
+
+.container-tittle h3{
+    font-size: 28pt;
+}
+
+.my-card-product{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 35px;
+}
+
+.my-product-card{
+    width: 200px;
+    height: 300px;
+}
