@@ -9,7 +9,7 @@ html, body{
     background-color: #080708;
 }
 
-h1,h2,h3{
+h1,h2,h3,h4,h5,h6{
     font-family: 'Bangers', cursive;
 }
 
@@ -144,7 +144,7 @@ nav{
     text-align: center;
 }
 
-.card img{
+.img-card-index{
     height: 300px;
     object-fit: cover;
 }
@@ -185,7 +185,7 @@ div.card-body{
         margin: 100px 0;
     }
     .card{
-        margin: 20px 0;
+        margin: 20px 10px;
         width: 20rem;
     }
 
@@ -346,8 +346,10 @@ footer{
 .container-tittle{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 50px 0;
     color: #E6E8E6;
+    flex-direction: column;
 }
 
 .container-tittle h3{
@@ -356,12 +358,49 @@ footer{
 
 .my-card-product{
     flex-direction: column;
-    justify-content: center;
     width: 100%;
-    padding: 35px;
+    padding: 15px;
+    align-items: center;
 }
 
-.my-product-card{
+.container-product-card-currency{
     width: 200px;
-    height: 300px;
+    height: 215px;
+    padding: 5px;
+    font-size: 18pt;
+    margin: 10px;
+}
+
+.img-card-product{
+    height: 90px;
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+a.link{
+    text-decoration: none;
+    color: #FDCA40;
+    padding: 2px;
+    border-radius: 20%;
+}
+
+a.link:hover{
+    box-shadow: 0px 5px 20px rgba(253, 203, 64, 0.534);
+    color: #080708;
+    background-color: #FDCA40;
+}
+
+.container-product-card-cryptocurrency{
+    width: 300px;
+    height: 315px;
+    padding: 5px;
+    font-size: 18pt;
+    margin: 10px;
+}
+
+.crypto-img{
+    height: 64px;
+    width: 64px;
 }
