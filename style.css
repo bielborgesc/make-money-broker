@@ -340,6 +340,7 @@ footer{
     height:250px;
     margin:auto;
     overflow-y:auto;
+    width: 300px;
 }
 
 /* Products */
@@ -350,6 +351,11 @@ footer{
     margin: 50px 0;
     color: #E6E8E6;
     flex-direction: column;
+}
+
+.container-tittle div{
+    padding: 5px;
+    text-align: center;
 }
 
 .container-tittle h3{
