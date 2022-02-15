@@ -13,9 +13,10 @@ h1,h2,h3{
     font-family: 'Bangers', cursive;
 }
 
-p{
+p, label, input{
     font-family: 'Oswald', sans-serif;
 }
+
 
 /* Menu Nav */
 nav{
@@ -237,10 +238,9 @@ footer{
  /* Form */
  .information{
     margin: 7vw 0;
-    height: 80vh;
+    height: 100%;
  }
  .information h3{
-    font-size: 28px;
     color: #E6E8E6;
     text-align: center;
  }
@@ -253,15 +253,17 @@ footer{
 
  label{
     color: #E6E8E6;
+    font-size: 20px;
  }
+
 
  .my-input-form{
     margin-bottom: 20px;
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 700;
     line-height: 1.5;
     color: #080708;
     background-color: #e6e8e6;
@@ -285,3 +287,57 @@ footer{
     background-color: #FDCA40;
 }
 
+.tittle-form{
+    font-size: 28pt;
+    margin-bottom: 50px;
+}
+
+.aside-form{
+    padding: 50px;
+}
+.text-aside{
+    color:#E6E8E6;
+}
+
+.aside-form p{
+    margin-bottom: 15px;
+    font-size: 20pt;
+}
+
+.aside-form h3{
+    display: flex;
+    border-bottom: 1px solid;
+    border-color: #FDCA40;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.my-btn{
+    margin: 20px;
+    color: #FDCA40;
+    background-color: #080708;
+    box-shadow: 0 0 1em gold;
+    border: none;
+}
+.my-btn:hover{
+    background-color: #FDCA40;
+    border: none;
+    color: #080708;
+}
+
+/* Alert */
+#liveAlertPlaceholder{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:0;
+    width:600px;
+    height:250px;
+    margin:auto;
+    overflow-y:auto;
+}
