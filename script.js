@@ -38,7 +38,7 @@ const createCryptocurrencyCard = (arr) => {
                                             <h4 class="card-title mb-3">${elem.name}</h4>
                                             <p class="card-text">${elem.symbol}</p>
                                             <p class="card-text">${elem.price}</p>
-                                            <p class="card-text">${elem.volume}</p>
+                                            <p class="card-text">${elem.volume} units</p>
                                         </div>
                                     </div>`)
             
