@@ -13,7 +13,7 @@ This site was created with the intention of remembering initial concepts that I 
 
  * On the last page you will find a form that will ask for some of your information, even if you fill in the form and submit it, it will show an alert informing you that your data has not been sent. This is because there is no backend involved for submitting forms. Beside you will also find contact information, this information is all fake.
 
- * O site consiste nas seguintes tecnologias: foi escrito em HTML, estilizado com CSS e também usei uma biblioteca chamada Bootstrap (https://getbootstrap.com/) que me ajudou a estilizar o site e torná-lo responsivo. Usei JavaScript e Jquery para criar dinamicamente elementos em HTML usando dados extraídos das APIs gratuitas currencyAPI (https://freecurrencyapi.net/) e Postman (https://www.postman.com/). Ambos são públicos, você pode encontrar os endpoints no arquivo script.js, usei Jquery para fazer requisições e selecionar elementos HTML através de seletores.
+ * The site consists of the following technologies: it was written in HTML, styled with CSS and I also used a library called Bootstrap (https://getbootstrap.com/) which helped me style the site and make it responsive. I used JavaScript and Jquery to dynamically create HTML elements using data pulled from the free currencyAPI (https://freecurrencyapi.net/) and Postman (https://www.postman.com/) APIs. Both are public, you can find the endpoints in the script.js file, I used Jquery to make requests and select HTML elements through selectors.
 
 ## Concluding
   The purpose of this project is to work with early technologies for web development and show that it is possible to build something elegant, modern, responsive and functional with an initial/intermediate knowledge.
