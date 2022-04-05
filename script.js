@@ -17,13 +17,15 @@ const showAlert = () => {
 
 }
 
-const createCurrencyCard = (obj) => {
-    Object.keys(obj).forEach((item) => {
+const createCurrencyCard = async (obj) => {
+    const list = obj.data
+    Object.values(list).forEach((item) => {
+        console.log(item.code)
         $("#currency").append(`<div class="card container-product-card-currency">
                                 <div class="card-body my-card-product">
                                     <img src="https://images.pexels.com/photos/259191/pexels-photo-259191.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="img-card-product">
-                                    <h4 class="card-title m-0">${item}</h4>
-                                    <p class="card-text">${obj[item]}</p>
+                                    <h4 class="card-title m-0">${item.code}</h4>
+                                    <p class="card-text">${item.value}</p>
                                 </div>
                             </div>`)
         
@@ -45,11 +47,13 @@ const createCryptocurrencyCard = (arr) => {
     })
 }
 
-const collectCoins =  async () => {    
-    const currency = await fetch("https://freecurrencyapi.net/api/v2/latest?apikey=0e1e4a30-8e6a-11ec-b6bc-853478e8683d")
+const collectCoins =  async () => {
+    const currency = await fetch("https://api.currencyapi.com/v3/latest?apikey=0e1e4a30-8e6a-11ec-b6bc-853478e8683d")
         .then(response => response.json())
-        .then(data => data.data)
+        .then(data => data)
     createCurrencyCard(currency)
+
+
     const cryptocurrencies = await fetch("https://api.coinstats.app/public/v1/coins?skip=0&limit=100")
         .then(response => response.json())
         .then(data => data.coins)
