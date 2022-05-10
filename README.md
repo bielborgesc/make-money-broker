@@ -7,7 +7,7 @@ This site was created with the intention of remembering initial concepts that I 
 
 ## Development
 
- * Este site contém uma página principal, onde apresenta um carrossel com algumas curiosidades, logo abaixo encontramos 3 links que o levarão ao site da B3, à página de produtos do site e a um vídeo que aborda o day trade
+ * This site has a main page, where it presents a carousel with some curiosities, just below you will find 3 links that will take you to the B3 website, the product page of the website and a video that discusses the day trade
 
  * We have a product page where we can find cards with various world currencies and their values in the "Coins" section.
 
