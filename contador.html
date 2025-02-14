@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Rifas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        textarea {
+            width: 90%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Contador de Rifas por Cor</h2>
+    <textarea id="entrada" placeholder="Cole o texto da rifa aqui..."></textarea><br>
+    <button onclick="contarCores()">Contar</button>
+    
+    <div id="resultado"></div>
+
+    <script>
+        function contarCores() {
+            let texto = document.getElementById("entrada").value;
+            
+            // Contagem das cores com regex
+            let azul = (texto.match(/🔵/g) || []).length;
+            let vermelho = (texto.match(/🔴/g) || []).length;
+            let verde = (texto.match(/🟢/g) || []).length;
+            let amarelo = (texto.match(/🟡/g) || []).length;
+
+            // Exibir o resultado
+            document.getElementById("resultado").innerHTML = `
+                🔵 Azul: ${azul} <br>
+                🔴 Vermelho: ${vermelho} <br>
+                🟢 Verde: ${verde} <br>
+                🟡 Amarelo: ${amarelo}
+            `;
+        }
+    </script>
+
+</body>
+</html>
